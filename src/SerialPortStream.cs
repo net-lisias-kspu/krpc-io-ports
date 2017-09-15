@@ -42,11 +42,12 @@ namespace KRPC.IO.Ports
 			read_timeout = readTimeout;
 			write_timeout = writeTimeout;
 			
-			SetSignal (SerialSignal.Dtr, dtrEnable);
-			
-			if (handshake != Handshake.RequestToSend && 
-					handshake != Handshake.RequestToSendXOnXOff)
-				SetSignal (SerialSignal.Rts, rtsEnable);
+			// The following is disabled as it relies on functionality not implemented by socat.
+			//SetSignal (SerialSignal.Dtr, dtrEnable);
+			//
+			//if (handshake != Handshake.RequestToSend && 
+			//		handshake != Handshake.RequestToSendXOnXOff)
+			//	SetSignal (SerialSignal.Rts, rtsEnable);
 		}
 
 		public override bool CanRead {
