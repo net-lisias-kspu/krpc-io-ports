@@ -1,4 +1,5 @@
 /* -*- Mode: Csharp; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8 -*- */
+using System;
 
 namespace KRPC.IO.Ports 
 {
