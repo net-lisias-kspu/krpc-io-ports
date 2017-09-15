@@ -210,7 +210,6 @@ namespace KRPC.IO.Ports
 			}
 		}
 
-		[MonoTODO("Not implemented")]
 		[Browsable (true)]
 		[MonitoringDescription ("")]
 		[DefaultValue (false)]
@@ -327,7 +326,6 @@ namespace KRPC.IO.Ports
 			}
 		}
 
-		[MonoTODO("Not implemented")]
 		[Browsable (true)]
 		[MonitoringDescription ("")]
 		[DefaultValue (63)]
@@ -397,7 +395,6 @@ namespace KRPC.IO.Ports
 			}
 		}
 
-		[MonoTODO("Not implemented")]
 		[DefaultValueAttribute(1)]
 		[Browsable (true)]
 		[MonitoringDescription ("")]
