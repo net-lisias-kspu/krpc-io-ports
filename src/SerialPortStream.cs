@@ -33,8 +33,9 @@ namespace KRPC.IO.Ports
 			fd = open_serial (portName);
 			if (fd == -1)
 				ThrowIOException ();
-				
-			TryBaudRate (baudRate);
+			
+                        // The following is disabled as it does not work with KSPs version of Mono.
+			//TryBaudRate (baudRate);
 			
 			if (!set_attributes (fd, baudRate, parity, dataBits, stopBits, handshake))
 				ThrowIOException (); // Probably Win32Exc for compatibility
