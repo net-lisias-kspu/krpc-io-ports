@@ -1,5 +1,4 @@
-/* -*- Mode: Csharp; tab-width: 8; indent-tabs-mode: t; c-basic-offset: 8 -*- */
-/*
+﻿/*
 	This file is part of KRPC.IO.Ports /L Unleashed
 		© 2025 LisiasT : https://lisias.net : http://lisias.net <support@lisias.net>
 		© 2017-2025 kRPC Org
@@ -14,25 +13,13 @@
 
 */
 using System;
-
 namespace KRPC.IO.Ports
 {
-	public class SerialPinChangedEventArgs : EventArgs
+	public static class LegalMamboJambo
 	{
-		internal SerialPinChangedEventArgs (SerialPinChange eventType)
-		{
-			this.eventType = eventType;
-		}
-
-		// properties
-
-		public SerialPinChange EventType {
-			get {
-				return eventType;
-			}
-		}
-
-		SerialPinChange eventType;
+		public const string Company = "/L Aerospace KSP Division";
+		public const string Copyright = "© 2025 LisiasT";
+		public const string Product = "KRPC.IO.Ports";
+		public const string Trademark = "KRPC.IO.Ports™ by kRPC Org; /L Unleashed™ by LisiasT";
 	}
 }
-
