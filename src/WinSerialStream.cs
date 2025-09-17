@@ -99,7 +99,7 @@ namespace KRPC.IO.Ports
 			if (!SetCommTimeouts(handle, timeouts))
 				ReportIOError (null);
 
-			/// Set DTR and RTS
+			// Set DTR and RTS
 			SetSignal(SerialSignal.Dtr, dtr_enable);
 
 			if (hs != Handshake.RequestToSend &&
