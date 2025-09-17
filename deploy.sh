@@ -101,7 +101,7 @@ deploy_gamedata() {
 	fi
 }
 
-VERSIONFILE=${PACKAGE}.version
+VERSIONFILE=KRPC.IO.Ports.version
 
 check
 cp $VERSIONFILE "./GameData/${TARGETDIR}"

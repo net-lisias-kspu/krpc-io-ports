@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-echo "N/A"
-exit 0
-
 source ./CONFIG.inc
 
 clean() {
